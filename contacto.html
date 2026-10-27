@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios – Agostina Morrone</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER / MENÚ -->
+  <header class="header" id="siteHeader">
+
+    <a href="index.html" class="logo" aria-label="Agostina Morrone, inicio">
+      <img src="./img/home/Logo.svg" alt="Agostina Morrone">
+    </a>
+
+    <button
+      class="hamburger"
+      id="btnMenu"
+      aria-expanded="false"
+      aria-controls="mainNav"
+      aria-label="Abrir menú"
+      type="button"
+    >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Principal">
+      <a href="index.html">Home</a>
+      <a href="proyectos.html" aria-current="page">Proyectos</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+  </header>
+
+  <main class="pagina-contacto">
+
+    <section class="contacto">
+
+      <div class="contacto-wrapper">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="contacto-info">
+
+          <span class="contacto-eyebrow">
+            NUEVO PROYECTO
+          </span>
+
+          <h1 class="contacto-title">
+            AGENDÁ<br>
+            UNA<br>
+            REUNIÓN
+          </h1>
+
+          <p class="contacto-descripcion">
+            Cada proyecto empieza con una idea.
+            Contame qué tenés en mente y pongámosla en marcha.
+          </p>
+
+          <div class="contacto-referencia">
+
+            <span>PRÓXIMA VUELTA: TU PROYECTO</span>
+          </div>
+
+        </div>
+
+        <!-- COLUMNA DERECHA: FORMULARIO -->
+        <div class="contacto-formulario">
+
+          <div class="contacto-formulario-cabecera">
+            <span class="contacto-eyebrow">DATOS DEL PROYECTO</span>
+         
+          </div>
+
+          <form class="contacto-form" action="gracias.html" method="get">
+
+            <div class="contacto-grid">
+              <div class="contacto-campo">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  autocomplete="given-name"
+                  required
+                >
+              </div>
+
+              <div class="contacto-campo">
+                <label for="apellido">Apellido</label>
+                <input
+                  type="text"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Tu apellido"
+                  autocomplete="family-name"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="contacto-campo">
+              <label for="emprendimiento">Marca o emprendimiento</label>
+              <input
+                type="text"
+                id="emprendimiento"
+                name="emprendimiento"
+                placeholder="Nombre de tu marca"
+              >
+            </div>
+
+            <div class="contacto-grid">
+              <div class="contacto-campo">
+                <label for="pais">País</label>
+                <input
+                  type="text"
+                  id="pais"
+                  name="pais"
+                  placeholder="Tu país"
+                  autocomplete="country-name"
+                >
+              </div>
+
+              <div class="contacto-campo">
+                <label for="ciudad">Ciudad</label>
+                <input
+                  type="text"
+                  id="ciudad"
+                  name="ciudad"
+                  placeholder="Tu ciudad"
+                  autocomplete="address-level2"
+                >
+              </div>
+            </div>
+
+            <div class="contacto-campo">
+              <label for="servicio">Servicio que buscás</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" disabled selected>Elegí una opción</option>
+                <option value="Identidad de marca">Identidad de marca</option>
+                <option value="Dirección de arte y sistemas visuales">
+                  Dirección de arte y sistemas visuales
+                </option>
+                <option value="Diseño web">Diseño web</option>
+                <option value="Diseño editorial">Diseño editorial</option>
+                <option value="Contenido y redes">Contenido y redes</option>
+                <option value="Otro">Otro / No estoy segura</option>
+              </select>
+            </div>
+
+            <div class="contacto-campo">
+              <label for="email">Correo electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nombre@correo.com"
+                autocomplete="email"
+                required
+              >
+            </div>
+
+            <div class="contacto-campo">
+              <label for="mensaje">Contame sobre tu proyecto</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="3"
+                placeholder="¿Qué tenés en mente?"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contacto-btn">
+              Enviar consulta <span aria-hidden="true">↗</span>
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-presentacion">
+        <h3 class="footer-title">Agostina Morrone</h3>
+        <p class="footer-tagline">
+          No se necesita inspiración, se necesita arrancar.
+        </p>
+      </div>
+
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/agoosmorrone07/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <img src="./img/logoinstagram.png" alt="Instagram">
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/agostina-morrone-87628827a/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <img src="./img/linkedinglogo.png" alt="LinkedIn">
+        </a>
+      </div>
+
+      <p class="footer-note">
+        Portfolio independiente · Estudiante de Diseño Gráfico.
+        © 2026 Agostina Morrone. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>

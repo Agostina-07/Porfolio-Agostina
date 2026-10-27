@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1f1f1f">
+  <title>Agostina Morrone | Diseño Gráfico</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+  <a href="#inicio" class="logo" aria-label="Agostina Morrone, inicio">
+    <img src="./img/home/Logo.svg" alt="Logo de Agostina Morrone">
+ 
+
+  <nav class="main-nav" id="mainNav" aria-label="Principal">
+    <a href="proyectos.html">Proyectos</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+  <main>
+    <!-- PRESENTACIÓN -->
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <p class="eyebrow">PILOTO / DISEÑADORA GRÁFICA</p>
+        <h1>Agostina<br>Morrone</h1>
+        <p class="hero-subtitulo">
+          Precisa en el proceso.<br>
+          <span>Espontánea en el resultado.</span>
+        </p>
+        <a href="#circuito" class="hero-link">RECORRÉ MI CIRCUITO ↓</a>
+      </div>
+
+      <div class="hero-imagen">
+        <img src="./img/home/Mesa de trabajo 2.png"
+             alt="Agostina Morrone">
+        <span class="foto-codigo">AM-007 / DRIVER PROFILE</span>
+      </div>
+
+    </section>
+
+    <!-- CIRCUITO INTERACTIVO -->
+    <section class="circuito" id="circuito">
+      <div class="seccion-intro">
+        <h2>Un recorrido<br>por quién soy.</h2>
+        <p>Elegí una curva para conocerme.</p>
+      </div>
+
+      <div class="pista">
+        <!-- Trazado decorativo del circuito -->
+        <svg class="pista-svg" viewBox="0 0 1000 1000"
+             preserveAspectRatio="none" aria-hidden="true">
+          <path class="pista-borde"
+            d="M 80,-30
+               L 80,120
+               C 80,190 170,210 270,210
+               L 750,210
+               C 900,210 920,330 820,390
+               L 260,390
+               C 100,390 100,510 250,530
+               L 720,560
+               C 920,575 910,720 760,740
+               L 280,740
+               C 100,740 100,870 280,890
+               L 950,890" />
+          <path class="pista-linea"
+            d="M 80,-30
+               L 80,120
+               C 80,190 170,210 270,210
+               L 750,210
+               C 900,210 920,330 820,390
+               L 260,390
+               C 100,390 100,510 250,530
+               L 720,560
+               C 920,575 910,720 760,740
+               L 280,740
+               C 100,740 100,870 280,890
+               L 950,890" />
+        </svg>
+
+        <!-- Números interactivos -->
+        <button class="curva curva-1 activa derecha"
+  data-curva="0"
+  style="--x: 8%; --y: 9%"
+  aria-pressed="true"
+  aria-controls="info-curva"
+  aria-label="Curva 1: Quién soy">
+  01
+</button>
+
+<button class="curva curva-2 izquierda"
+  data-curva="1"
+  style="--x: 75%; --y: 21%"
+  aria-pressed="false"
+  aria-controls="info-curva"
+  aria-label="Curva 2: Educación">
+  02
+</button>
+
+<button class="curva curva-3 izquierda"
+  data-curva="2"
+  style="--x: 84%; --y: 40%"
+  aria-pressed="false"
+  aria-controls="info-curva"
+  aria-label="Curva 3: Herramientas">
+  03
+</button>
+
+<button class="curva curva-4 derecha"
+  data-curva="3"
+  style="--x: 23%; --y: 53%"
+  aria-pressed="false"
+  aria-controls="info-curva"
+  aria-label="Curva 4: Experiencia">
+  04
+</button>
+
+<button class="curva curva-5 izquierda"
+  data-curva="4"
+  style="--x: 77%; --y: 75%"
+  aria-pressed="false"
+  aria-controls="info-curva"
+  aria-label="Curva 5: Mi forma de trabajar">
+  05
+</button>
+
+        <!-- Panel que cambia al seleccionar una curva -->
+        <article class="info-curva" id="info-curva"
+                 aria-live="polite" aria-atomic="true">
+          <div class="info-cabecera">
+            <span id="info-numero">CURVA 01</span>
+            <span class="estado">● EN PISTA</span>
+          </div>
+
+          <p class="info-etiqueta" id="info-etiqueta">
+            PRESENTACIÓN DEL PILOTO
+          </p>
+
+          <h3 id="info-titulo">¿Quién soy?</h3>
+
+          <p id="info-texto">
+            Soy Agostina, estudiante de Diseño Gráfico en UADE.
+            Curiosa, organizada y detallista, siempre busco nuevas
+            formas de crear y comunicar ideas.
+          </p>
+
+          <div class="info-pie">
+            <span id="info-codigo">AM / PROFILE</span>
+            <span>DESLIZÁ POR EL CIRCUITO ↗</span>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <footer class="footer" id="contacto">
+      <div>
+        <p class="eyebrow">FIN DE VUELTA / PRÓXIMA SALIDA</p>
+        <h2>¿Creamos algo?</h2>
+        <p>Estoy lista para el próximo proyecto.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:agosmorrone@gmail.com">Email ↗</a>
+        <a href="https://www.instagram.com/agoosmorrone07/"
+           target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="https://www.linkedin.com/in/agostina-morrone-87628827a/"
+           target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+
+      <p class="copyright">
+        © 2026 Agostina Morrone / Diseño Gráfico
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
